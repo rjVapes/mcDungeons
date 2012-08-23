@@ -118,7 +118,7 @@ public class EntityHelper {
 
           enderman.setPosition(location.getX(), location.getY(), location.getZ());
           
-          mcWorld.removeEntity((net.minecraft.server.EntityEnderman) enderman);
+          mcWorld.removeEntity((net.minecraft.server.EntityEnderman) mcEntity);
           mcWorld.addEntity(enderman, SpawnReason.CUSTOM);
 
           return;
